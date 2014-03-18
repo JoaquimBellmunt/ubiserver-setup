@@ -10,4 +10,6 @@ sudo usermod -a -G sudo ubi
 su - ubi
 cd ~/
 
+# enable ssh and screen
+sudo apt-get -y install ssh screen
 
