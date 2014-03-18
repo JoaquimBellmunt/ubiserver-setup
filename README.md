@@ -17,3 +17,6 @@ cd ~/
 git clone http://github.com/tibotiber/ubiserver-setup.git
 ~/ubiserver-setup/setup.sh
 ```
+- You will be prompted for the password of the user 'ubi'. We advice to key in 'ubi'as the password.
+- You will be prompted for the mysql installation. The password for root is 'root'. You can change it if you want or keep it. Then respond yes to all questions except for remote root login that should be kept enabled.
+- If prompted while installing phpmyadmin: select apache2, then say Yes to use dbconfig-common, use 'root' to all required passwords
