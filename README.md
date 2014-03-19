@@ -34,10 +34,17 @@ To check the installation, you may use the following:
 - go to <server_ip>/phpmyadmin in your browser: if you get access to a login page, then mysql and phpmyadmin are both up.
 - run 'java -version' to check that Java is installed.
 - run '~/ubiserver/startUbiBrain.sh' to check if the reasoning side is working well.
+- go to <server_ip>/ubiserver to check if the python/flask side is ok. It should display 'This could be a general index'.
+- finally go to <server_ip>/ubiserver/house/<your_number>/activities to check if the D3.js interface appears.
 
 ## Debug
-- To check if wsgi is working properly, you can execute the following:
+### WSGI Testing
+To check if wsgi is working properly, you can execute the following:
 ```
 cp ~/ubiserver-setup/ubiserver_wsgi.py.test /var/www/ubiserver/ubiserver_wsgi.py
 ```
 Then go to <server_ip>/ubiserver in your browser and it should display 'DEAMON MODE'.
+
+## Known bugs
+### README.md not found
+If you meet this issue when performing a 'fab deploy', simply remove the 'long_description' line in ~/ubiREST/setup.py.
