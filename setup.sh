@@ -37,3 +37,8 @@ sudo service apache2 restart
 sudo apt-get -y install phpmyadmin
 sudo sh -c 'echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf'
 sudo service apache2 restart
+
+# should continue to install ubismart here!
+# separate for now since platform not available for scripted download...
+# switch to manual setup section
+echo -e "> The setup of server features is over.\n> Please refer to http://github.com/tibotiber/ubiserver-setup\n> for information about the next steps."
