@@ -38,7 +38,7 @@ To check the installation, you may use the following:
 - finally go to <server_ip>/ubiserver/house/<your_number>/activities to check if the D3.js interface appears.
 
 ## Starting UbiSmart Framework
-To start the framework, execute the following:
+To start the framework, execute the following with password 'ubi':
 ```
 ~/ubiREST/startUbiRest.sh
 ~/ubiserver/startUbiBrain.sh
