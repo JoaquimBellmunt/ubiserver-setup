@@ -29,13 +29,13 @@ For the time being, ubismart framework is not accessible for scripted download. 
 
 ## Validation
 To check the installation, you may use the following:
-- go to <server_ip> in your browser: this should display a "It works!" page, which means apache is working.
-- go to <server_ip>/info.php in your browser: this should return a traditional php_info page, which confirms that php is up.
-- go to <server_ip>/phpmyadmin in your browser: if you get access to a login page, then mysql and phpmyadmin are both up.
+- go to *serverip* in your browser: this should display a "It works!" page, which means apache is working.
+- go to *serverip*/info.php in your browser: this should return a traditional php_info page, which confirms that php is up.
+- go to *serverip*/phpmyadmin in your browser: if you get access to a login page, then mysql and phpmyadmin are both up.
 - run 'java -version' to check that Java is installed.
 - run '~/ubiserver/startUbiBrain.sh' to check if the reasoning side is working well.
-- go to <server_ip>/ubiserver to check if the python/flask side is ok. It should display 'This could be a general index'.
-- finally go to <server_ip>/ubiserver/house/<your_number>/activities to check if the D3.js interface appears.
+- go to *serverip*/ubirest to check if the python/flask side is ok. It should display 'This could be a general index'.
+- finally go to *serverip*/ubirest/house/*yourhousenumber*/activities to check if the D3.js interface appears.
 
 ## Starting UbiSmart Framework
 To start the framework, execute the following with password 'ubi':
@@ -50,7 +50,7 @@ To check if wsgi is working properly, you can execute the following:
 ```
 cp ~/ubiserver-setup/ubiserver_wsgi.py.test /var/www/ubiserver/ubiserver_wsgi.py
 ```
-Then go to <server_ip>/ubiserver in your browser and it should display 'DEAMON MODE'.
+Then go to *server_ip*/ubiserver in your browser and it should display 'DEAMON MODE'.
 
 ## Known Bugs
 ### README.md not found
