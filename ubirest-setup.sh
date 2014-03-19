@@ -33,7 +33,7 @@ cp ~/ubiserver-setup/ubirest_wsgi.py.prod /var/www/ubirest/ubirest_wsgi.py
 cp ~/ubiserver-setup/application_cfg.py /var/www/ubirest/
 
 # update fabfile
-# TODO
+cp ~/ubiserver-setup/fabfile.py ~/ubiREST/
 
 # deploy with fabric
 fab clean pack deploy
