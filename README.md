@@ -1,9 +1,9 @@
-UbiServer setup
+UbiServer Setup
 ===============
 
 Script for setting up UbiSmart Server environment.
 
-## Preparation and setup
+## Preparation & Setup
 This has been tested on a fresh Ubuntu Desktop 12.04 install. To prepare for the setup, you must get access to a linux machine with sudo rights.
 
 First, install git on your machine:
@@ -37,6 +37,13 @@ To check the installation, you may use the following:
 - go to <server_ip>/ubiserver to check if the python/flask side is ok. It should display 'This could be a general index'.
 - finally go to <server_ip>/ubiserver/house/<your_number>/activities to check if the D3.js interface appears.
 
+## Starting UbiSmart Framework
+To start the framework, execute the following:
+```
+~/ubiREST/startUbiRest.sh
+~/ubiserver/startUbiBrain.sh
+```
+
 ## Debug
 ### WSGI Testing
 To check if wsgi is working properly, you can execute the following:
@@ -45,6 +52,6 @@ cp ~/ubiserver-setup/ubiserver_wsgi.py.test /var/www/ubiserver/ubiserver_wsgi.py
 ```
 Then go to <server_ip>/ubiserver in your browser and it should display 'DEAMON MODE'.
 
-## Known bugs
+## Known Bugs
 ### README.md not found
 If you meet this issue when performing a 'fab deploy', simply remove the 'long_description' line in ~/ubiREST/setup.py.

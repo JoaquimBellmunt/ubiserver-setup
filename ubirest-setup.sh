@@ -1,9 +1,10 @@
 #!/bin/bash
 # setup file for configuring ubiREST
 
-# download from github
+# download from github and make create easy start script
 cd ~/
 git clone http://github.com/RomainEndelin/ubiREST.git
+cp ~/ubiserver-setup/startUbiRest.sh ~/ubiREST/
 
 # install fabric
 sudo apt-get -y install fabric
