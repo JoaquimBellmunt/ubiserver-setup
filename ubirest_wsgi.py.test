@@ -1,0 +1,28 @@
+activate_this = '/var/www/ubirest/env/bin/activate_this.py'
+f = open(activate_this)
+try:
+    source = f.read()
+finally:
+    f.close()
+
+exec(compile(source, activate_this, 'exec'), dict(__file__=activate_this))
+
+import os
+
+os.environ['PYTHON_EGG_CACHE'] = '/var/www/ubirest/.python-eggs'
+os.environ['UBIREST_CONFIG'] = '/var/www/ubirest/application_cfg.py'
+
+def application(environ, start_response):
+    status = '200 OK'
+
+    if not environ['mod_wsgi.process_group']:
+        output = 'EMBEDDED MODE'
+    else:
+        output = 'DAEMON MODE'
+
+    response_headers = [('Content-Type', 'text/plain'),
+                        ('Content-Length', str(len(output)))]
+
+    start_response(status, response_headers)
+
+    return [output]

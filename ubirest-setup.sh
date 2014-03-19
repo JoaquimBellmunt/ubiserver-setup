@@ -28,6 +28,9 @@ cd /var/www/ubirest/
 virtualenv --distribute env
 cd ~/
 
+# copy ubirest_wsgi to www
+cp ubirest_wsgi.py.prod /var/www/ubirest/ubirest_wsgi.py
+
 # update fabfile
 # TODO
 

@@ -34,3 +34,10 @@ To check the installation, you may use the following:
 - go to <server_ip>/phpmyadmin in your browser: if you get access to a login page, then mysql and phpmyadmin are both up.
 - run 'java -version' to check that Java is installed.
 - run '~/ubiserver/startUbiBrain.sh' to check if the reasoning side is working well.
+
+## Debug
+- To check if wsgi is working properly, you can execute the following:
+```
+cp ~/ubiserver-setup/ubiserver_wsgi.py.test /var/www/ubiserver/ubiserver_wsgi.py
+```
+Then go to <server_ip>/ubiserver in your browser and it should display 'DEAMON MODE'.

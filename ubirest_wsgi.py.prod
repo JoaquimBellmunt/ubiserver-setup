@@ -1,0 +1,17 @@
+activate_this = '/var/www/ubirest/env/bin/activate_this.py'
+f = open(activate_this)
+try:
+    source = f.read()
+finally:
+    f.close()
+
+exec(compile(source, activate_this, 'exec'), dict(__file__=activate_this))
+
+import os
+
+os.environ['PYTHON_EGG_CACHE'] = '/var/www/ubirest/.python-eggs'
+os.environ['UBIREST_CONFIG'] = '/var/www/ubirest/application_cfg.py'
+
+
+from ubirest.web_server.server import application
+
