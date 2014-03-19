@@ -15,7 +15,7 @@ rm setuptools*.zip
 # install mod_wsgi for Apache
 sudo apt-get -y install libapache2-mod-wsgi
 #sudo sh -c 'echo "LoadModule wsgi_module/mod_wsgi.so" >> /etc/apache2/httpd.conf'   # not for Ubuntu. Make sure wsgi is present in /etc/apache2/mods_enabled
-sudo sh -c 'cat add2httpd.conf >> /etc/apache2/httpd.conf'
+sudo sh -c 'cat ~/ubiserver-setup/add2httpd.conf >> /etc/apache2/httpd.conf'
 sudo service apache2 restart
 
 # create ubirest folder in www
@@ -28,8 +28,9 @@ cd /var/www/ubirest/
 virtualenv --distribute env
 cd ~/
 
-# copy ubirest_wsgi to www
-cp ubirest_wsgi.py.prod /var/www/ubirest/ubirest_wsgi.py
+# copy ubirest wsgi index and config to www
+cp ~/ubiserver-setup/ubirest_wsgi.py.prod /var/www/ubirest/ubirest_wsgi.py
+cp ~/ubiserver-setup/application_cfg.py /var/www/ubirest/
 
 # update fabfile
 # TODO
