@@ -10,3 +10,5 @@ tar -zxvf ~/Downloads/eye-bin.tar.gz
 mkdir ~/ubiserver
 mv */ ~/ubiserver
 
+# install java
+sudo apt-get -y install openjdk-7-jdk
