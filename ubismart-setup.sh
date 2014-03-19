@@ -12,3 +12,7 @@ mv */ ~/ubiserver
 
 # install java
 sudo apt-get -y install openjdk-7-jdk
+
+# setup database 
+mysql -u root -proot -h localhost < create.sql
+mysql -u root -proot -h localhost qol_dev < dump.sql
