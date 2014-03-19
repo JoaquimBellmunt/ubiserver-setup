@@ -7,7 +7,7 @@
 tar -zxvf ~/Downloads/ubismart-platform-starhome.tar.gz
 tar -zxvf ~/Downloads/bundles.tar.gz
 tar -zxvf ~/Downloads/eye-bin.tar.gz
-mkdir ~/ubiserver
+cp -r ubiserver-ini/ ~/ubiserver
 mv */ ~/ubiserver
 
 # install java
