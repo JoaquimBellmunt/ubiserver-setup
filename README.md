@@ -33,3 +33,4 @@ To check the installation, you may use the following:
 - go to <server_ip>/info.php in your browser: this should return a traditional php_info page, which confirms that php is up.
 - go to <server_ip>/phpmyadmin in your browser: if you get access to a login page, then mysql and phpmyadmin are both up.
 - run 'java -version' to check that Java is installed.
+- run '~/ubiserver/startUbiBrain.sh' to check if the reasoning side is working well.
