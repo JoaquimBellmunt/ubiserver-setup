@@ -15,7 +15,7 @@ sudo apt-get install git
 Then clone this repository to your machine and execute it:
 ```
 cd ~/
-git clone http://github.com/tibotiber/ubiserver-setup.git
+git clone http://github.com/pawmint/ubiserver-setup.git
 ~/ubiserver-setup/setup.sh
 ```
 - You will be prompted for the password of the user 'ubi'. We advice to key in 'ubi' as the password.
